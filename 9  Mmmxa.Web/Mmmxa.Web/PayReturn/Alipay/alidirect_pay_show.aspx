@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="PayReturn_Alipay_alidirect_pay_show" Codebehind="alidirect_pay_show.aspx.cs" %>

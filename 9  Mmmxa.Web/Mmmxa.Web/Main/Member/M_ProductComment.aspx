@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>评价</title>
+   <link rel='stylesheet' type='text/css' href='style/css.css' />
+   <script type="text/javascript" language="javascript" src="js/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+   <form runat="server" id="form1">
+    <div id="containe_bg">
+         <ShopNum1:M_Head ID="M_Head" runat="server"  SkinFilename="Skin/M_Head.ascx" />
+         <div id="content_bg">
+        <ShopNum1:M_ProductComment ID="M_ProductComment" runat="server" SkinFilename="skin/M_ProductComment.ascx" />
+          </div>
+         <!--底部文件调用--> 
+         <!-- #include file="m_bottom.aspx" -->
+          <!--底部文件调用--> 
+      </div>
+    </form>
+</body>
+</html>

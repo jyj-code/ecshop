@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{67E067F2-5738-4D03-B0B9-44E51FE78842}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.QRCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Data\QRCodeBitmapImage.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Data\QRCodeImage.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Data\QRCodeSymbol.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Ecc\BCH15_5.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Ecc\ReedSolomon.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Reader.Pattern\AlignmentPattern.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Reader.Pattern\FinderPattern.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Reader.Pattern\LogicalSeed.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Reader\QRCodeDataBlockReader.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Reader\QRCodeImageReader.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\Color.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\Color_Fields.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\ConsoleCanvas.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\ContentConverter.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\DebugCanvas.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\DebugCanvasAdapter.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\QRCodeUtility.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec.Util\SystemUtils.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec\QRCodeDecoder.cs" />
+    <Compile Include="ShopNum1.QRCode.Codec\QRCodeEncoder.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\AlignmentPatternNotFoundException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\DecodingFailedException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\FinderPatternNotFoundException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\InvalidDataBlockException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\InvalidVersionException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\InvalidVersionInfoException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\SymbolNotFoundException.cs" />
+    <Compile Include="ShopNum1.QRCode.ExceptionHandler\VersionInformationException.cs" />
+    <Compile Include="ShopNum1.QRCode.Geom\Axis.cs" />
+    <Compile Include="ShopNum1.QRCode.Geom\Line.cs" />
+    <Compile Include="ShopNum1.QRCode.Geom\Point.cs" />
+    <Compile Include="ShopNum1.QRCode.Geom\SamplingGrid.cs" />
+    <Compile Include="ShopNum1.QRCode\ChartImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class3.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

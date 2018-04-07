@@ -1,0 +1,15 @@
+﻿User-agent: * 这里的*代表的所有的搜索引擎种类，*是一个通配符
+Disallow: /Main/Admin/ 
+Disallow: /Main/Account/ 
+Disallow: /Main/Member/ 
+Disallow: /PayReturn/ 
+Disallow: /PageHander/ 
+Disallow: /Api/
+Disallow: /Shop/ShopAdmin/
+Allow: /Main/Themes/ 
+Allow: /Shop/Shop/ 
+Allow: .htm$ 
+Allow: .html$ 
+Allow: .gif$ 
+Allow: .jpg$ 
+Sitemap: 

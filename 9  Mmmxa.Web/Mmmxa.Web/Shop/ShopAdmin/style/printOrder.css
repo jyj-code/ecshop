@@ -1,0 +1,57 @@
+﻿html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input { padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, table, th, td { font-size: 1em; font-style: normal; font-weight: normal;}
+strong { font-weight: bold;}
+ul, ol { list-style: none outside none;}
+fieldset, img { border: medium none;}
+caption, th {  text-align: left;}
+table { border-collapse: collapse; border-spacing: 0;}
+body { background: none repeat scroll 0 0 #FFF; color: #333333; font: 12px/1  "Microsoft YaHei", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Helvetica, Arial,  sans-serif;}
+input, select, textarea { font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+a { outline: medium none;}
+a:link, a:visited, a:active { text-decoration: none;}
+a:hover { text-decoration: underline;}
+i, cite, em { font-style: normal;}
+.print-layout { font-size:12px; background:#FAFAFA; border: solid 1px #CCC; position:relative; width:210mm; height:297mm; padding:5mm 50mm 5mm 5mm ; margin: 20px auto; box-shadow: 2px 2px 2px rgba(204,204,204,0.5); }
+.print-layout .print-btn {background:#FFF; border:  solid 1px #ccc;  position: absolute; z-index: 3; top:10mm; right:10mm; line-height:32px; padding:5px 10px; border-radius: 5px; box-shadow: 2px 2px 0 rgba(153,153,153,0.2); cursor: pointer;}
+.print-layout .print-btn:hover {  background: #555; box-shadow: none; border-color: #555;}
+.print-layout .print-btn i { background: url(../images/member/ncus_public.png) scroll no-repeat -220px -530px; vertical-align: middle; display: inline-block; width: 32px; height: 32px;}
+.print-layout .print-btn a { font-family:"微软雅黑"; font-size: 20px;padding: 0 0 0 10px; color: #555; font-weight:600; display:inline-block; vertical-align: middle;}
+.print-layout .print-btn:hover a, .print-layout .print-btn a:hover { color: #FFF;  text-decoration:none;}
+.print-layout .a5-size, .print-layout .a4-size { background:#FFF; border: dashed 1px #ccc; width: 210mm; position:absolute; top:5mm; left:5mm; padding:1px;}
+.print-layout .a5-size { height:148mm;  z-index:2;}
+.print-layout .a4-size { height:297mm; z-index:1;}
+.print-layout .a5-tip, .print-layout .a4-tip{ color:#333; width:36mm; position: absolute; z-index:2; right:8mm;}
+.print-layout .a5-tip { top:50mm;}
+.print-layout .a4-tip { top:160mm;}
+.print-layout dl dt h1 { font-family:"Arial Black", Gadget, sans-serif; font-size:72px; line-height:72px;}
+.print-layout dl dt em { font-family: Arial; font-size:11px; line-height:20px; background: #333; color: #FFF; padding: 0 8px; height:20px; border-radius:10px;}
+.print-layout .a5-tip dd, .print-layout .a4-tip dd { line-height:24px;}
+.print-layout .print-page { width: 210mm; height:297mm; position:absolute; z-index:3; top:5mm; left:5mm; margin:1px;  overflow:auto;}
+.orderprint { background: #FFF; width: 190mm; height:130mm; padding:10mm 10mm 8mm 10mm; color:#000000; position:relative;}
+.orderprint .top { font-family:"微软雅黑"; line-height:60px; width:190mm; height:60px; overflow:hidden; font-size:24px;}
+.orderprint .top .logo { width:200px; height:60px; float:left;}
+.orderprint .top .logo-title { text-align: left; width:450px; height: 60px; float:left; margin-left:10px; overflow:hidden;}
+.orderprint .top .full-title { width:100%; text-align:center;}
+.orderprint .explain { color: #555; line-height: 20px; width:550px; position: absolute; bottom:50px; left:50px;}
+.orderprint .seal {  position: absolute; bottom:30px; right:50px; }
+.orderprint .page { line-height:18px; color:#999; position: absolute; bottom:15px; left:50%; margin-left:-30px;}
+.orderprint table { font-family:Arial, Helvetica, sans-serif;  font-size:12px; line-height:18px; width:100%; border-collapse: collapse;}
+.buyer-info { margin: 15px 0;}
+.order-info thead th { background: #E7E7E7; text-align:center; border-bottom: solid 2px #000; border-top: solid 2px #000; padding:2px 0;}
+.order-info thead tr td {}
+.order-info tbody tr th {  background: #F7F7F7; padding:8px 0; text-align:center; font-weight:600;  border-bottom: solid 2px #000; border-top: solid 2px #000;}
+.order-info tbody tr td { padding: 8px 0; text-align: center;}
+.order-info tfoot tr th { border-bottom: solid 2px #000; padding: 6px 0;}
+.order-info tfoot tr th span { line-height:20px; white-space:nowrap; display:inline-block; width: 24%; height: 20px; padding:0; margin:0; border:0; overflow:hidden; text-overflow:ellipsis; }
+
+/* tip提示 */
+.tip-yellowsimple { color:#000; background-color:#fff9c9; text-align:left; min-width:50px; max-width:300px; border:1px solid #c7bf93; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; z-index:1000; padding:6px 8px;}
+.tip-yellowsimple .tip-inner { font:12px/16px arial,helvetica,sans-serif;}
+.tip-yellowsimple .tip-arrow-top { background:url(../images/tip-yellowsimple_arrows.gif) no-repeat; width:9px; height:6px; margin-top:-6px; margin-left:-5px; top:0; left:50%;}
+.tip-yellowsimple .tip-arrow-right { background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -9px 0; width:6px; height:9px; margin-top:-4px; margin-left:0; top:50%; left:100%;}
+.tip-yellowsimple .tip-arrow-bottom { background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -18px 0; width:9px; height:6px; margin-top:0; margin-left:-5px; top:100%; left:50%;}
+.tip-yellowsimple .tip-arrow-left { background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -27px 0; width:6px; height:9px; margin-top:-4px; margin-left:-6px; top:50%; left:0;}
+body {
+	background-color: #FFF;
+	background-image: none;
+}

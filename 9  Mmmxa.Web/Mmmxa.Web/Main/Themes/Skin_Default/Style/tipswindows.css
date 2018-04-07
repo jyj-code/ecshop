@@ -1,0 +1,9 @@
+﻿  body{font:12px/180% Arial, Helvetica, sans-serif;}
+ #windownbg{display:none;position:absolute;width:100%;height:100%;background:#000;top:0;left:0; }
+ #windown-box{position:fixed;_position:absolute;border:5px solid #E9F3FD;background:#FFF;text-align:left;width:330px;}
+ #windown-title{position:relative;height:30px;border:1px solid #A6C9E1;overflow:hidden;background:url() 0 0 repeat-x;}
+ #windown-title h2{position:relative;left:10px;top:5px;font-size:14px;color:#666;}
+ #windown-close{position:absolute;right:10px;top:8px;width:15px;height:15px;text-indent:-10em;background:url(../Images/close_button.gif) 100% 0px no-repeat;cursor:pointer;}
+ #windown-content-border{position:relative;top:-1px;border:1px solid #A6C9E1;padding:5px 0 5px 5px; width:320px;}
+ #windown-content img,#windown-content iframe{display:block;}
+ #windown-content .loading{position:absolute;left:50%;top:50%;margin-left:-8px;margin-top:-8px;}

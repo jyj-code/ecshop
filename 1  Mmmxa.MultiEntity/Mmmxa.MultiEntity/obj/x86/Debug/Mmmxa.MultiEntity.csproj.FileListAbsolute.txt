@@ -1,0 +1,4 @@
+E:\工作室\sh\ecshop\Mmmxa.Shop.Project\1  Mmmxa.MultiEntity\Mmmxa.MultiEntity\bin\Debug\ShopNum1MultiEntity.dll
+E:\工作室\sh\ecshop\Mmmxa.Shop.Project\1  Mmmxa.MultiEntity\Mmmxa.MultiEntity\bin\Debug\ShopNum1MultiEntity.pdb
+E:\工作室\sh\ecshop\Mmmxa.Shop.Project\1  Mmmxa.MultiEntity\Mmmxa.MultiEntity\obj\x86\Debug\ShopNum1MultiEntity.dll
+E:\工作室\sh\ecshop\Mmmxa.Shop.Project\1  Mmmxa.MultiEntity\Mmmxa.MultiEntity\obj\x86\Debug\ShopNum1MultiEntity.pdb

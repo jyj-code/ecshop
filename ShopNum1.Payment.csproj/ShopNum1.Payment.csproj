@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B7C2EEC5-F869-4BCF-9554-FD14C90FB7BF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.Payment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="UPOPSDK">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\UPOPSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Common">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\ShopNum1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TrustPayClient">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\TrustPayClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="com.yeepay">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\com.yeepay.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Com.Alipay\AliPayDirectConfig.cs" />
+    <Compile Include="Com.Alipay\AliPayDirectCore.cs" />
+    <Compile Include="Com.Alipay\AliPayDirectMD5.cs" />
+    <Compile Include="Com.Alipay\AliPayDirectNotify.cs" />
+    <Compile Include="Com.Alipay\AliPayDirectSubmit.cs" />
+    <Compile Include="Com.Alipay\AlipayMD5.cs" />
+    <Compile Include="Com.Alipay\Config.cs" />
+    <Compile Include="Com.Alipay\Core.cs" />
+    <Compile Include="Com.Alipay\Notify.cs" />
+    <Compile Include="Com.Alipay\Submit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.Payment.ABCPay\ABCPayMent.cs" />
+    <Compile Include="ShopNum1.Payment.CCBPay\CCBPayMent.cs" />
+    <Compile Include="ShopNum1.Payment\Alipay.cs" />
+    <Compile Include="ShopNum1.Payment\Alipay2.cs" />
+    <Compile Include="ShopNum1.Payment\Alipay2GB.cs" />
+    <Compile Include="ShopNum1.Payment\Alipay3.cs" />
+    <Compile Include="ShopNum1.Payment\Alipay3Notify.cs" />
+    <Compile Include="ShopNum1.Payment\AlipayGB.cs" />
+    <Compile Include="ShopNum1.Payment\Allbuy.cs" />
+    <Compile Include="ShopNum1.Payment\BankTransfer.cs" />
+    <Compile Include="ShopNum1.Payment\Baofoo.cs" />
+    <Compile Include="ShopNum1.Payment\DeliveryPay.cs" />
+    <Compile Include="ShopNum1.Payment\MD5Util.cs" />
+    <Compile Include="ShopNum1.Payment\Nps.cs" />
+    <Compile Include="ShopNum1.Payment\Pay.cs" />
+    <Compile Include="ShopNum1.Payment\PayInfo.cs" />
+    <Compile Include="ShopNum1.Payment\PayPal.cs" />
+    <Compile Include="ShopNum1.Payment\PreDeposits.cs" />
+    <Compile Include="ShopNum1.Payment\ShengPayMent.cs" />
+    <Compile Include="ShopNum1.Payment\Tenpay.cs" />
+    <Compile Include="ShopNum1.Payment\TenpayMed.cs" />
+    <Compile Include="ShopNum1.Payment\TenpayUtil.cs" />
+    <Compile Include="ShopNum1.Payment\Tenpay_Dual.cs" />
+    <Compile Include="ShopNum1.Payment\TLPay.cs" />
+    <Compile Include="ShopNum1.Payment\TLPayReq.cs" />
+    <Compile Include="ShopNum1.Payment\TL_recive.cs" />
+    <Compile Include="ShopNum1.Payment\Upop.cs" />
+    <Compile Include="ShopNum1.Payment\Xpay.cs" />
+    <Compile Include="ShopNum1.Payment\Yeepay.cs" />
+    <Compile Include="ShopNum1.Payment\YeepaySZX.cs" />
+    <Compile Include="tenpay\TenpayDual_ClientResponseHandler.cs" />
+    <Compile Include="tenpay\TenpayDual_ResponseHandler.cs" />
+    <Compile Include="tenpay\TenpayDual_TenpayHttpClient.cs" />
+    <Compile Include="ThreeDES\ThreeDES.cs" />
+    <Compile Include="UdpaySecurity\UdpayRsa.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

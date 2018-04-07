@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Alipay2notify_url, ShopNum1.Deploy" %>

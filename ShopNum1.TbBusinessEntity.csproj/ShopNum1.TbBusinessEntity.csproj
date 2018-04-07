@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{422CDD2F-FD20-4DED-AD21-BA3DC45133CF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.TbBusinessEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\ShopNum1_TbCat.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\ShopNum1_TbPropValue.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\ShopNum1_TbSysItemCat.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbArea.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbItem.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbItemCat.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbItemImg.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbItemProp.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbLocation.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbLocationItem.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbLogistics_Companies.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbOrder.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbPromotionDetail.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbPropImg.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbPropValue.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbShipping.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbSku.cs" />
+    <Compile Include="ShopNum1.TbBusinessEntity\TbTrade.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

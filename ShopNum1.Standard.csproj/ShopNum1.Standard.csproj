@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D69E1E67-3A89-4C39-8995-6DB56145452C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.Standard</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\cancelMOForwardCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\cancelMOForwardCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\chargeUpCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\chargeUpCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\GClass0.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getBalanceCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getBalanceCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getEachFeeCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getEachFeeCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getMOCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getMOCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getReportCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getReportCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getVersionCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\getVersionCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\logoutCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\logoutCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\registDetailInfoCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\registDetailInfoCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\registExCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\registExCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\SDKService.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\sendSMSCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\sendSMSCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\serialPwdUpdCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\serialPwdUpdCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\setMOForwardCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\setMOForwardCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\setMOForwardExCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\setMOForwardExCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.VjWebservice\statusReport.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\accountCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\accountCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\excelSendCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\excelSendCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\ISmsService.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\moCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\moCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\reportCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\reportCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\sendLSActionCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\sendLSActionCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\smsSendCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\smsSendCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\updatePasswordCompletedEventArgs.cs" />
+    <Compile Include="ShopNum1.Standard.WebReference\updatePasswordCompletedEventHandler.cs" />
+    <Compile Include="ShopNum1.Standard\SendMessage.cs" />
+    <Compile Include="ShopNum1.Standard\SMS.cs" />
+    <Compile Include="ShopNum1.Standard\SMSSecond.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopNum1.Common.csproj\ShopNum1.Common.csproj">
+      <Project>{6cd57061-a6a0-4133-8581-d0e9668931cd}</Project>
+      <Name>ShopNum1.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,142 @@
+﻿/* CSS reset*/
+body
+{
+	font-size: 12px;
+	font-family: "宋体" , Verdana, Arial;
+	line-height: 150%;
+	padding: 0;
+	color: #222;
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+}
+.navigator
+{
+	height: 26px;
+	line-height: 26px;
+	background: url(../images/right_table_bg.jpg) repeat-x left top;
+	padding-left: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #20599c;
+	border: 1px solid #ddd;
+}
+.bt2
+{
+	height: 24px;
+	line-height: 24px;
+	background: url(../images/allbtbg.jpg) repeat-x left top;
+	border: 1px solid #c7dee9;
+	padding: 0 3px;
+	margin: 6px;
+	cursor: pointer;
+}
+
+a
+{
+	color: #075B92;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #ff0000;
+}
+			
+/*** 弹出层css*/
+.pop_ {
+	width: 80%;
+	border: 1px #96D1DF solid;
+	background: #fff;
+	padding: 1px;
+	color: #333;
+	position: absolute;
+	top: 20%;
+	left: 2%;
+	height: auto;
+	z-index: 10
+}
+
+.pop_title {
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	/* background: #ecf9ff url ('../images/title_move.gif') center no-repeat; */
+	background: #ecf9ff;
+	border-bottom: 1px #d3ecf3 solid;
+	color: #444;
+	font-weight: bold
+}
+
+.pop_title_left {
+	float: left;
+	width: 90%;
+	overflow: hidden;
+	text-indent: 6px;
+	cursor: move
+}
+
+.pop_title_left img {
+	float: left;
+	border: 0;
+	margin: 10px 0 0 5px
+}
+
+.pop_title_right {
+	width: 8%;
+	float: right;
+	text-align: right;
+	cursor: pointer
+}
+
+.pop_title_right_print {
+	width: 3%;
+	float: left;
+	text-align: right
+}
+
+.pop_title_right img {
+	margin: 5px 10px 5px 10px;
+	cursor: pointer
+}
+
+.pop_title_right_print img {
+	margin: 5px 10px 5px 10px;
+	cursor: pointer
+}
+
+.pop_content {
+	float: left;
+	width: 100%;
+	margin: 1px 0 0 0;
+	font-size: 14px
+}
+
+.pop_function {
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px #fff solid;
+	text-align: center
+}
+
+.pop_search {
+	width: 100%;
+	height: 35px;
+	border-top: 1px #fff solid;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px 0 5px 0;
+	border-bottom: 3px #96D1DF dotted;
+}
+
+.pop_page {
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	font-size: 12px;
+	border-top: 3px #96D1DF dotted;
+	vertical-align: middle;
+}

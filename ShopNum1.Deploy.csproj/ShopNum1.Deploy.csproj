@@ -1,0 +1,2010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6FD78077-64E1-428A-AD1F-27B8964F430F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.Deploy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActionlessForm">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\ActionlessForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="ShopNum1.MemberBusinessLogic">
+      <HintPath>..\ShopNum1.MemberBusinessLogic.csproj\bin\Debug\ShopNum1.MemberBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Payment">
+      <HintPath>..\ShopNum1.Payment.csproj\bin\Debug\ShopNum1.Payment.dll</HintPath>
+    </Reference>
+    <Reference Include="ETSClient">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\ETSClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Control">
+      <HintPath>..\ShopNum1.Control.csproj\bin\Debug\ShopNum1.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="ShopNum1MultiEntity">
+      <HintPath>..\ShopNum1MultiEntity\bin\Debug\ShopNum1MultiEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="QQWry.NET">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\QQWry.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="ShopNum1.Interface">
+      <HintPath>..\ShopNum1.Interface.csproj\bin\Debug\ShopNum1.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.BusinessLogic">
+      <HintPath>..\ShopNum1.BusinessLogic.csproj\bin\Debug\ShopNum1.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ExtendInterface">
+      <HintPath>..\ShopNum1.ExtendInterface.csproj\bin\Debug\ShopNum1.ExtendInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="ShopNum1.ShopBusinessLogic">
+      <HintPath>..\ShopNum1.ShopBusinessLogic.csproj\bin\Debug\ShopNum1.ShopBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.AdXml">
+      <HintPath>..\ShopNum1.AdXml.csproj\bin\Debug\ShopNum1.AdXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MessageBusinessLogic">
+      <HintPath>..\ShopNum1.MessageBusinessLogic.csproj\bin\Debug\ShopNum1.MessageBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="ShopNum1.PowerBusinessLogic">
+      <HintPath>..\ShopNum1.PowerBusinessLogic.csproj\bin\Debug\ShopNum1.PowerBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.DispatchBusinessLogic">
+      <HintPath>..\ShopNum1.DispatchBusinessLogic.csproj\bin\Debug\ShopNum1.DispatchBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Factory">
+      <HintPath>..\ShopNum1.Factory.csproj\bin\Debug\ShopNum1.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.DispatchInterface">
+      <HintPath>..\ShopNum1.DispatchInterface.csproj\bin\Debug\ShopNum1.DispatchInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Common">
+      <HintPath>..\ShopNum1.Common.csproj\bin\Debug\ShopNum1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MemberInterface">
+      <HintPath>..\ShopNum1.MemberInterface.csproj\bin\Debug\ShopNum1.MemberInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.OrderBusinessLogic">
+      <HintPath>..\ShopNum1.OrderBusinessLogic.csproj\bin\Debug\ShopNum1.OrderBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.OrderInterface">
+      <HintPath>..\ShopNum1.OrderInterface.csproj\bin\Debug\ShopNum1.OrderInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ExtendBusinessLogic">
+      <HintPath>..\ShopNum1.ExtendBusinessLogic.csproj\bin\Debug\ShopNum1.ExtendBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ArticleBusinessLogic">
+      <HintPath>..\ShopNum1.ArticleBusinessLogic.csproj\bin\Debug\ShopNum1.ArticleBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.PowerInterface">
+      <HintPath>..\ShopNum1.PowerInterface.csproj\bin\Debug\ShopNum1.PowerInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ExtendedCommon">
+      <HintPath>..\ShopNum1.ExtendedCommon.csproj\bin\Debug\ShopNum1.ExtendedCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="ShopNum1.PaymentBusinessLogic">
+      <HintPath>..\ShopNum1.PaymentBusinessLogic.csproj\bin\Debug\ShopNum1.PaymentBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.PaymentInterface">
+      <HintPath>..\ShopNum1.PaymentInterface.csproj\bin\Debug\ShopNum1.PaymentInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="TrustPayClient">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\TrustPayClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.SecondResponseCommon">
+      <HintPath>..\ShopNum1.SecondResponseCommon.csproj\bin\Debug\ShopNum1.SecondResponseCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ArticleInterface">
+      <HintPath>..\ShopNum1.ArticleInterface.csproj\bin\Debug\ShopNum1.ArticleInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="tenpayLib">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\tenpayLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.DataAccess">
+      <HintPath>..\ShopNum1.DataAccess.csproj\bin\Debug\ShopNum1.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.CityBusinessLogic">
+      <HintPath>..\ShopNum1.CityBusinessLogic.csproj\bin\Debug\ShopNum1.CityBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.CityFactory">
+      <HintPath>..\ShopNum1.CityFactory.csproj\bin\Debug\ShopNum1.CityFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.CityInterface">
+      <HintPath>..\ShopNum1.CityInterface.csproj\bin\Debug\ShopNum1.CityInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="AlipayClass">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\AlipayClass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\com.yeepay.dll</HintPath>
+    </Reference>
+    <Reference Include="tenpay">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\tenpay.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CCBRSA">
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\Interop.CCBRSA.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.SMSInterface">
+      <HintPath>..\ShopNum1.SMSInterface.csproj\bin\Debug\ShopNum1.SMSInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Email">
+      <HintPath>..\ShopNum1.Email.csproj\bin\Debug\ShopNum1.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Standard">
+      <HintPath>..\ShopNum1.Standard.csproj\bin\Debug\ShopNum1.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.VideoInterface">
+      <HintPath>..\ShopNum1.VideoInterface.csproj\bin\Debug\ShopNum1.VideoInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Localization">
+      <HintPath>..\ShopNum1.Localization.csproj\bin\Debug\ShopNum1.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ShopFactory">
+      <HintPath>..\ShopNum1.ShopFactory.csproj\bin\Debug\ShopNum1.ShopFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ShopInterface">
+      <HintPath>..\ShopNum1.ShopInterface.csproj\bin\Debug\ShopNum1.ShopInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ReportBusinessLogic">
+      <HintPath>..\ShopNum1.ReportBusinessLogic.csproj\bin\Debug\ShopNum1.ReportBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ReportInterface">
+      <HintPath>..\ShopNum1.ReportInterface.csproj\bin\Debug\ShopNum1.ReportInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ZtcBusinessLogic">
+      <HintPath>..\ShopNum1.ZtcBusinessLogic.csproj\bin\Debug\ShopNum1.ZtcBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ZtcInterface">
+      <HintPath>..\ShopNum1.ZtcInterface.csproj\bin\Debug\ShopNum1.ZtcInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.AttachMentInterface">
+      <HintPath>..\ShopNum1.AttachMentInterface.csproj\bin\Debug\ShopNum1.AttachMentInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ScoreBusinessLogic">
+      <HintPath>..\ShopNum1.ScoreBusinessLogic.csproj\bin\Debug\ShopNum1.ScoreBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ScoreInterface">
+      <HintPath>..\ShopNum1.ScoreInterface.csproj\bin\Debug\ShopNum1.ScoreInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="ShopNum1.MessageInterface">
+      <HintPath>..\ShopNum1.MessageInterface.csproj\bin\Debug\ShopNum1.MessageInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="ShopNum1.ShopLocalization">
+      <HintPath>..\ShopNum1.ShopLocalization.csproj\bin\Debug\ShopNum1.ShopLocalization.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.AdBusinessLogic">
+      <HintPath>..\ShopNum1.AdBusinessLogic.csproj\bin\Debug\ShopNum1.AdBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.AdInterface">
+      <HintPath>..\ShopNum1.AdInterface.csproj\bin\Debug\ShopNum1.AdInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.SecondEntity">
+      <HintPath>..\ShopNum1.SecondEntity.csproj\bin\Debug\ShopNum1.SecondEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.TbTopCommon">
+      <HintPath>..\ShopNum1.TbTopCommon.csproj\bin\Debug\ShopNum1.TbTopCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.DiscuzToolkit">
+      <HintPath>..\ShopNum1.DiscuzToolkit.csproj\bin\Debug\ShopNum1.DiscuzToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.DiscuzHelper">
+      <HintPath>..\ShopNum1.DiscuzHelper.csproj\bin\Debug\ShopNum1.DiscuzHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddressOpreateJson.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProuductPanicBuy_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProuductSpellBuy_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProuduct_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminWelcome_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentAlterOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentApplyLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentApplyLog_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentFreezeOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentMemApplyLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentMemApplyLog_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentPreTransfer_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvancePaymentStatistics_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvertisementImg_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AdvertisementImg_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Advertisement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Advertisement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AgentKeyWords_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Announcement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Announcement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ApplyAdvertisement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ApplyAdvertisement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ArticleCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ArticleCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ArticleComment_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ArticleComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ArticleComment_Reply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Article_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Article_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AttachMentCateGory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AttachMentCateGory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AttachMent_list.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AttachMent_List_Select.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AttachMent_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_backupDB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Brand_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Brand_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryAdBuyAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryAdBuy_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryAdID_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryAdvertisement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryAdvertisement_SearchDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CategoryComment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ChangeAdvancePaymentLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ChangeCityAdvancePaymentLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ChangeRankScoreLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ChangeScoreLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CityAdvancePaymentStatistics_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CityPaymentApplyLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CityPaymentMemApplyLog_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ClearData.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ComplaintsManagement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ComplaintsManagement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ControlData_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ControlData_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Control_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CouponList_Search.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_DefaultAd_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_DefaultAd_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Discuz_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_EmailGroupSend_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Email_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Email_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_FreezeAdvancePaymentLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Group_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ImageCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ImageCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Image_Dialog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Image_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Image_List_Select.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Index.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_InfoControl_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_InfoControl_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_KeyWords_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Left.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Link_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Link_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_LoginExit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_LogisticsCompany_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_LogisticsCompany_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ManagerShopPayMent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MemberChartArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MemberGroup_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MemberGroup_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Member_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Member_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Message_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Message_Reply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMSGroupSend_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMSGroupSend_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMSInterface_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMSMemberGroup_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMSMemberGroup_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMS_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_MMS_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OpenShop.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderPanic_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderPanic_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderProduct_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderScore_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderScore_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderSpell_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_OrderSpell_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Order_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Order_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PageInfo_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PageInfo_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Page_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PayAdvertisementImg_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PayAdvertisementImg_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PaymentStatistics_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PaymentType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_PaymentType_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Payment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Payment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ProductIntegralChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ProductIntegral_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Prouduct_PanicChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Prouduct_SpellChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ReceiveMessage_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_RegionSalesOrderOperate_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SeeBuyRate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SellOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SellOrder_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SendMessage_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SensitiveWordsSeting_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ServiceSite_BasicSettings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service_EmailSendSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service_MMSSendSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopArticleCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopArticleComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopArticleComment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopArticle_Details.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopArticle_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopChartArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopClickReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopClick_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopDailysalesreport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopDoMainChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopDoMain_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopDoMain_List_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopDoMain_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopEnsureVerifyChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopEnsureVerify_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopEnsure_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopEnsure_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopIncomeReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopIncome_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopNum1CategoryChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopNum1SupplyDemandCheck_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopNum1_CategoryInfo_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopNum1_ShopProductProp_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopNum1_SupplyDemand_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopVedioCommentChecked_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ShopVedio_Details.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SiteMota_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SiteMota_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SkinBackup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SkinSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SpecificationList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SpecificationOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationManage_Install.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationManage_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationManage_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationManage_UserManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationOrderReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SubstationShopReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SupplyDemandComment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SurveyTheme_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SurveyTheme_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Third_loginList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Third_loginOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Top.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UCDiscuz_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateApplyAdvertisement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdatePassword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateShopURL.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl_ArticleRelateArticleSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl_MemberSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UserDefinedColumn_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UserDefinedColumn_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_User_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_VideoCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_VideoCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_VideoComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Video_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Video_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_websites_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ZtcGoods_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvancePaymentStatistics_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdminaddGroup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdminProuduct_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdminShopEnsureVerifyChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdminWelcome_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_adduser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AdvertisementImg_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AdvertisementImg_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Advertisement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Advertisement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AgentKeyWords_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AnnouncementCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AnnouncementCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Announcement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Announcement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ArticleCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ArticleCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ArticleComment_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ArticleComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ArticleComment_Reply.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Article_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Article_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AttachMentCateGory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AttachMentCateGory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AttachMent_list.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AttachMent_List_Select.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_AttachMent_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ChangeCityAdvancePaymentLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ChangeOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CityPaymentApplyLog_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Competence.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ComplaintsManagement_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ComplaintsManagement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CouponList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CouponList_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CouponList_Search.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CouponType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_CouponType_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Default.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Global_Global_CacheManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Global_refreshallcache.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Group_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Group_ActivityOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Group_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Group_ProductList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ImageCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ImageCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Image_Dialog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Image_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Image_List_Select.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Index.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_KeyWords_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_LifeOrder_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Limit_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Limit_Product.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Limit_Setting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Link_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Link_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Login.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_LoginExit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ManagerShopPayMent.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_MerchantsManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_MessageShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrdeComplaints.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrdeComplaintsOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderInfo_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderList_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderPanic_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderPanic_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderProductReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderProduct_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderScore_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderScore_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_OrderSpell_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Order_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Order_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_PageAdID_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_PageAdID_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_PaymentStatistics_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_PaymentStatistics_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProductIntegralChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProductIntegralDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProductIntegral_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProductSearchDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProuductChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ProuductPanicBuy_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Prouduct_PanicChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Prouduct_SpellChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ScoreProductCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SeeBuyRate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SeeBuyRate_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SellOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SellOrder_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ServiceAdmin_UserControl_TopMenu.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ServiceOnLineService_ManageShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ServiceOnLineService_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Service_ServiceOnLineService_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SetMemberScoreV82.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_setWxInfo_V82.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticleCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticleCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticleComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticleComment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticle_Details.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopArticle_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopAuditFailedReason.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopCategoryAply_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopChartArea.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopClickReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopClick_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopDoMainChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopDoMain_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopDoMain_List_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopEnsureVerify_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopInfoList_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopInfoList_AuditNo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopInfoList_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopInfo_AuditOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopInfo_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopNum1SupplyDemandCheck_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopNum1_ScoreProductCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopNum1_SupplyDemandCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopNum1_SupplyDemandCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopNum1_SupplyDemand_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopProductCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopProductComment_Detail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopProductComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopSales.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopSales_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopVedioChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopVedioCommentChecked_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopVedioComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopVedio_Details.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopVedio_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopZtcApplyAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ShopZtcApplyDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Shop_ImgManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SiteMota_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SiteMota_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SiteSpread.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SupplyDemandCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SupplyDemandComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SupplyDemandComment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SupplyDemandDetails.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SurveyOption_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SurveyTheme_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_SurveyTheme_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Theme_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Theme_ActivityOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Theme_ProductList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UpdatePassword.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UpdateShopURL.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UptateRank_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UserControl_ArticleRelateArticleSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UserControl_MemberSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UserDefinedColumn_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_UserDefinedColumn_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_User_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_VedioCommentChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_VideoCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_VideoCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_VideoComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Video_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_Video_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_WithdrawsCash.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ZtcGoodsDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentAdmin_ZtcGoods_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent_AgentAdmin_AgentProuductChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent_PaymentStatistics_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent_RegionSales_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxMsgHelper.cs" />
+    <Compile Include="Alipay2notify_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay2return_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay3notify_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay3return_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Api_userCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankReceive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankSend.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baofoopay_post.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="baofooreturn_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Callback.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryAdID_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryAdvertisement_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="City_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class10.cs" />
+    <Compile Include="Class11.cs" />
+    <Compile Include="Class12.cs" />
+    <Compile Include="Class13.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="Class8.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="CompressOptions.cs" />
+    <Compile Include="HtmlCompressWhitespaceFilter.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="JsonModel.cs" />
+    <Compile Include="MainAdmin_City_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_addpic.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_adduser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_add_img.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_AnnouncementCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_AnnouncementCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryAdBuy_SearchDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryAdID_SearchDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryDetails.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryType.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CategoryType_Add.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ChangeOrder.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Competence.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CouponList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CouponList_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CouponType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_CouponType_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Default.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_EmailMemberGroup_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_EmailMemberGroup_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_EmailSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Global_Global_CacheManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Global_refreshallcache.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_GoodsDetails.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Group_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Group_ActivityOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Group_ProductList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_HelpType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_HelpType_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Help_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Help_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_IisManager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_LifeOrder_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Limit_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Limit_Product.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Limit_Setting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_localtime.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberActualAuthentication_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberActualAuthentication_Detai.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberActualAuthentication_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberActualAuthentication_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberInfo_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberInfo_SendMsg.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberRank_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MemberRank_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Member_List_Select.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MerchantsManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MobilePayment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_MobilePayment_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_OrdeComplaints.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_OrdeComplaintsOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_OrderPrint_One.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_OrderProductReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_PaymentRecords.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Prefecture_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ProductIntegralDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ProductSearchDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_RegionSales.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_RegionSalesOrderOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ReportMonthChart.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Report_CheckV82.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Robots_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SensitiveWordsSeting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SetCategoryScale.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SetMemberScoreV82.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_setWxInfo_V82.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopActualAuthentication_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopActualAuthentication_Detai.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopAmountReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopAmount_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopApplyRankChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopApplyRank_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopArticleCheck.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopAuditFailedReason.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopCategoryAply_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopCategoryAply_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopCategoryAply_SearchDetail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopInfoList_Audit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopInfoList_AuditNo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopInfoList_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopInfo_AuditOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopInfo_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_CategoryType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_Category_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_Category_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_ShopProductProp_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_SupplyDemandCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopNum1_SupplyDemandCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopProductCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopProductComment_Detail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopRank_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopRank_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopReputation_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopReputation_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopSales.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopSales_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopTemplate_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopTemplate_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopType_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopType_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopVedioChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopVedio_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopZtcApplyAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ShopZtcApplyDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Shop_ImgManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SiteSpread.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SlideManage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SupplyDemandCommentAudit_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_SupplyDemandDetails.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_TbCIDSpecification.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Test.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Theme_ActivityList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Theme_ActivityOperate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_Theme_ProductList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_UploadLoad.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_UptateRank_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_WapAppSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_websites_list.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Admin_ZtcGoodsDetal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_AgentAdmin_WapAppSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_MainAdmin_ShopProductComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_MainAdmin_ShopVedioComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_MainAdmin_SupplyDemandComment_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_MainAdmin_VedioCommentChecked_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Prefecture_list.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Second_Alipay_AlipayReturn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Second_Baidu_BaiduReturn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_second_Taobao_TaobaoReturn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_Second_XinlanReturn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_ServiceOnLineService_ManageShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="merchant_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageShow.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notify_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OperateLog_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderInfo_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderList_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdID_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdID_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagedData.cs" />
+    <Compile Include="PayReturn_ABCPay_ABCPay_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ABCPay_ABCPay_search.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ABCPay_ABCPay_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ABCPay_MerchantFailure.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alipay1_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alipay1_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alipay2_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alipay2_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alitwo_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_Alipay_alitwo_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_bankonline_AutoReceive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_bankonline_BankReceive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_bankonline_BankSearch.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_bankonline_BankSend.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_CCBPay_CCBPay_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_CCBPay_CCBPay_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_HuanXun_Hx_Post.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_HuanXun_HX_Receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_HuanXun_HX_Show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_OrderReturn.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ShengPay_SPReceive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ShengPay_SPSend.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_ShengPay_SP_Post.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_TLPay_TL_Recive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_udpayRet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_unionpay_NetPaySubmit.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_unionpay_unionpay_receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayReturn_unionpay_unionpay_show.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produce_ServiceAdmin_ServiceEmailGropSend_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produce_ServiceAdmin_ServiceSenEmailHistory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receive.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="return_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="safe_360.cs" />
+    <Compile Include="SeeBuyRate_Report.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Send.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceAdmin_UserControl_TopMenu.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceSite_BasicSettings1.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAdmin_ServiceMessageBoard_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAdmin_ServiceOnLineService_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAdmin_ServiceSite_EamilSetting.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAdmin_ServiceSite_ImageSettings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAdmin_ServiceSite_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceAgentAdmin_ServiceSite_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceMessageBoard_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service_ServiceOnLineService_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetMap.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopCategoryOpreateJson.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopNum1MultiHttpModule.cs" />
+    <Compile Include="ShopNum1_Admin_ScoreProductCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopNum1_ShopNum1Admin_ProductCategory_Operate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopNum1_ShopNum1Admin_ShopNum1_ProductCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopNum1_ShopNum1Admin_ShopNum1_ScoreProductCategory_List.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopUrlOperate.cs" />
+    <Compile Include="SurveyOption_Manage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TbCategory_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tenpayAppreturn_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tenpayAppshow_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tenpayreturn_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tenpayshow_url.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tg_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Union_Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopNum1.AttachMentBusinessLogic.csproj\ShopNum1.AttachMentBusinessLogic.csproj">
+      <Project>{f2f53641-049a-4a0c-b135-f2bbac323b35}</Project>
+      <Name>ShopNum1.AttachMentBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopNum1.SecondBussinesslogic.csproj\ShopNum1.SecondBussinesslogic.csproj">
+      <Project>{609cbc2a-8290-4050-9753-138aa823c4f2}</Project>
+      <Name>ShopNum1.SecondBussinesslogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopNum1.SecondRequestCommon.csproj\ShopNum1.SecondRequestCommon.csproj">
+      <Project>{cbe3d40c-2472-4dd5-91f2-3b4f61dc4fb6}</Project>
+      <Name>ShopNum1.SecondRequestCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopNum1.SMSBusinessLogic.csproj\ShopNum1.SMSBusinessLogic.csproj">
+      <Project>{a980a680-188b-4bff-aab2-3d89c5902dc9}</Project>
+      <Name>ShopNum1.SMSBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopNum1.TbBusinessEntity.csproj\ShopNum1.TbBusinessEntity.csproj">
+      <Project>{422CDD2F-FD20-4DED-AD21-BA3DC45133CF}</Project>
+      <Name>ShopNum1.TbBusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopNum1.VideoBusinessLogic.csproj\ShopNum1.VideoBusinessLogic.csproj">
+      <Project>{7a98ff74-060d-48e1-a368-d3b9ebf2b338}</Project>
+      <Name>ShopNum1.VideoBusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

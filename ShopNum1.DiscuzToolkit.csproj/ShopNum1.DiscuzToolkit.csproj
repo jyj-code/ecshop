@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6B16EBA5-AC6D-4C3A-979F-AB9931D6BC41}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.DiscuzToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CityMall_V8.2.1_2014年6月30日Release(加密)\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Arg.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\ArgResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\AttachmentInfo.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\ChangePasswordResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\CreateForumResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\DiscuzException.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\DiscuzParam.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\DiscuzSession.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\EncodePasswordResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Error.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\ErrorDetails.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\ErrorType.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\FormatType.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Forum.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\ForumTopic.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Friend.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\GetForumResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\GetIDResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\GetIndexListResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\GetNotiificationResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\IndexForum.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Location.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\LoggedInUserResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Me.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\MessagesGetResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\MessagesSendResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Notification.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Post.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\PrivateMessage.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\RegisterResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Reply.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SendNotificationEmailResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SendNotificationResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SessionInfo.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SessionWrapper.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SetExtCreditsResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\SetInfoResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TokenInfo.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Topic.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicCreateResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicDeleteRepliesResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicDeleteResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicEditResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicGetListResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicGetRencentRepliesResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicGetResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\TopicReplyResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\User.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\UserForEditing.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\UserInfoResponse.cs" />
+    <Compile Include="ShopNum1.DiscuzToolkit\Util.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

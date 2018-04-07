@@ -1,0 +1,43 @@
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+---[Pro_Shop_SearchMessageBoardListNew] 'shop1','A.Guid','','a.sendtime','desc','10','1','0'
+create proc [dbo].[Pro_Shop_SearchScoreProduct] 
+@columnnames  nvarchar(4000),
+@searchname  nvarchar(50),
+@ordername  nvarchar(50),
+@sdesc varchar(4)='desc',--倒序还是正序 desc asc 默认为倒序
+@perpagenum  INTEGER=10, --每页的数量默认为10
+@current_page INTEGER=1, ----当前页  默认为1
+@isreturcount  INTEGER -----是否返回总数
+as 
+	DECLARE @sql nvarchar(1000)
+	SET @sql=''
+	BEGIN
+	 --返回总数量（数据的列数） 包括分页数量
+	   IF(@isreturcount=1)
+		BEGIN 
+		SET @sql=' SELECT COUNT(1) AS ALLCOUNT FROM ( SELECT  Guid  FROM  ShopNum1_Shop_ScoreProduct   where   IsSaled=1  and  IsAudit=1  GROUP BY    Guid    ) AS A'
+	    EXEC(@sql)
+        END
+	   ---返回数据
+	   ELSE
+			 begin
+			 DECLARE @start_row_num AS INTEGER
+			 --设置开始行号
+			 SET @start_row_num =(@current_page-1)*@perpagenum;
+			 SET @sql='
+			 WITH t AS
+			 (
+			 SELECT ROW_NUMBER() OVER (ORDER BY '+@ordername+' '+@sdesc+') AS row_number,'+@ColumnNames+
+			' FROM ShopNum1_Shop_ScoreProduct  WHERE    IsSaled=1  and  IsAudit=1      '+' 
+			)
+			 SELECT * FROM t WHERE row_number BETWEEN '+cast(@start_row_num+1 AS varchar(10)) +' AND '+cast((@start_row_num+@perPageNum) AS varchar(10))
+		 print @sql	 
+			EXEC(@sql)
+			
+		    END
+  END
+
+

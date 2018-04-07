@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CBE3D40C-2472-4DD5-91F2-3B4F61DC4FB6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.SecondRequestCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ShopNum1.SecondResponseCommon">
+      <HintPath>..\ShopNum1.SecondResponseCommon.csproj\bin\Debug\ShopNum1.SecondResponseCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.Second\ErrorRsp.cs" />
+    <Compile Include="ShopNum1.Second\JsonOperate.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_AlipayOAuthClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_Alipay_config.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_Alipay_function.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_Alipay_notify.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_BaiduCommonClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_BaiduOAuthClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_QzoneCommonClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_QzoneConfig.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_TaobaoCommonClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_TaobaoOAuthClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_XinlanCommonClient.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_XinlanOAuthClient.cs" />
+    <Compile Include="ShopNum1.Second\UrlImgOperate.cs" />
+    <Compile Include="ShopNum1.Second\XmlOperate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopNum1.SecondBussinesslogic.csproj\ShopNum1.SecondBussinesslogic.csproj">
+      <Project>{609cbc2a-8290-4050-9753-138aa823c4f2}</Project>
+      <Name>ShopNum1.SecondBussinesslogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

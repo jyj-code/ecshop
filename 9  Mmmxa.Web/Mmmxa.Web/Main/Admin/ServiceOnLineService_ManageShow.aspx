@@ -1,0 +1,169 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Main_ServiceOnLineService_ManageShow, ShopNum1.Deploy" %>
+
+<%@ Register Assembly="ShopNum1.Control" Namespace="ShopNum1.Control" TagPrefix="cc1" %>
+<%@ Register Src="UserControl/MessageShow.ascx" TagName="MessageShow" TagPrefix="GroupFly" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>客服管理</title>
+    <link rel="stylesheet" type="text/css" href="style/css.css" />
+
+    <script type="text/javascript" language="javascript" src="js/CommonJS.js"></script>
+
+    <style type="text/css">
+
+        .shopth
+        {
+            margin: 0;
+            margin-top: 1px;
+        }
+        .shoptd
+        {
+            margin: 0;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="right">
+        <div class="rhigth">
+            <div class="rl">
+            </div>
+            <div class="rcon">
+                <h3>
+                    <asp:Label ID="LabelTtitle" runat="server" Text="客服管理"></asp:Label></h3>
+            </div>
+            <div class="rr">
+            </div>
+        </div>
+        <div class="welcon clearfix">
+            <div class="order_edit kf_list">
+                <table border="0" cellpadding="1" cellspacing="0" width="100%">
+                    <tr>
+                        <th align="right" width="150px">
+                            <div class="shopth">
+                                开启关闭：
+                            </div>
+                        </th>
+                        <td valign="middle">
+                            <div class="shoptd">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <asp:RadioButton ID="RadioButtonOpen" runat="server"  GroupName="online"/>
+                                        </td>
+                                        <td style="color: #333333;">
+                                            开启
+                                        </td>
+                                        <td style="padding-left: 18px;">
+                                            <asp:RadioButton ID="RadioButtonClose" runat="server" GroupName="online"/>
+                                        </td>
+                                        <td style="color: #333333;">
+                                            关闭
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th align="right">
+                            <div class="shopth">
+                                在线客服：
+                            </div>
+                        </th>
+                        <td>
+                            <div class="shoptd">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <asp:CheckBox ID="CheckBoxQQ" Checked="false" Text="" runat="server" />
+                                        </td>
+                                        <td style="color: #333333;">
+                                            QQ
+                                        </td>
+                                        <td style="padding-left: 18px;">
+                                            <asp:CheckBox ID="CheckBoxWW" Checked="false" Text="" runat="server" />
+                                        </td>
+                                        <td style="color: #333333;">
+                                            在线旺旺
+                                        </td>
+                                         <td style="padding-left: 18px;">
+                                            <asp:CheckBox ID="CheckBoxPhone" Checked="false" Text="" runat="server" />
+                                        </td>
+                                        <td style="color: #333333;">
+                                            服务电话
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th align="right">
+                            <div class="shopth">
+                                服务电话：
+                            </div>
+                        </th>
+                        <td>
+                            <div class="shoptd">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td colspan="6">
+                                            <asp:TextBox ID="TextBoxServerPhone" runat="server"  CssClass="tinput" MaxLength="11"></asp:TextBox>
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                   <script type="text/javascript" language="javascript">
+                            function NumTxt_Int(o)
+                            {
+                               o.value=o.value.replace(/\D/g,'');
+                            }
+                             // 判断是否是数字
+                            function checknum(str)
+                            {
+                                var re = /^[0-9]+$/; 
+                                if (!re.test(str))
+                                {
+                                    alert("请输入正确的数字！");
+                                    return false;
+                                }else{return true;}
+                            }
+                            
+                            function funCheckSub()
+                            {
+                                var pd=$("#TextBoxServerPhone").val();
+                                if(pd=="")
+                                {
+                                   alert("服务电话不能为空！");return false;
+                                }
+                                else
+                                {
+                                    if(pd.indexOf("-")!=-1)
+                                    {
+                                         return checknum(pd.split("-")[0])&&checknum(pd.split("-")[0]);
+                                    }
+                                    else
+                                    {
+                                        return checknum(pd);
+                                    }
+                                }
+                            }
+                   </script>
+                </table>
+                <div class="sbtn" style="margin-left: 150px;">
+                    <asp:Button ID="ButtonAdd" runat="server" Text="确定" CssClass="dele" OnClick="ButtonAdd_Click" OnClientClick="return funCheckSub();"/>
+                    <GroupFly:MessageShow ID="MessageShow" Visible="false" runat="server" />
+                       <asp:HiddenField ID="HiddenFieldXmlPath" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

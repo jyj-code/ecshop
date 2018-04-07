@@ -1,0 +1,67 @@
+@charset "gb2312";
+/* CSS Document */
+body{ margin:0; padding:0; height:100%; background:#2675b0 url(../images/lbg.jpg) repeat-x;}
+ul{ list-style:none; margin:0; padding:0;  color:#666;}
+form{ margin:0; padding:0;}
+.clear{ clear:both;}
+
+.alogin_bg{ background:url(../images/login.jpg) center center no-repeat; width:1000px; height:718px; margin:0 auto;}
+.warp{ padding:270px 99px 0 92px;}
+.logo{ background:url(../images/logo3.gif) no-repeat; width:329px; height:72px; margin-left:37px; float:left; display:inline; cursor:pointer;}
+.admin_login_box{  width:325px; height:120px; margin-left:65px; float:left; display:inline;}
+.ad{ height:70px; overflow:hidden;}
+.admin_login{ display:block; float:left; width:225px; margin-right:8px;}
+.adminbtn{ width:77px; height:58px; overflow:hidden;  float:left; margin-top:5px;}
+.adminbtn a,.bt3{ display:block;  width:77px; height:58px; background:url(../images/dlbtn.jpg) no-repeat; cursor:pointer; text-indent:-99999px; border:none;}
+.admin_login li{ float:left; height:35px; line-height:30px; font-size:14px; color:#666;}
+.admin_login li.left_txt{ width:57px; text-align:right;}
+.admin_login li.right_input{ float:right; width:168px;}
+.admin_login .right_input .text,.code_rigth .txtcode{ width:160px; height:22px; line-height:22px; font-size:12px; border:1px solid #ccc; outline:none;}
+.adcode{ width:325px; overflow:hidden;}
+.code_left{ width:56px; height:35px; line-height:30px; float:left; font-size:14px; color:#666;}
+.code_rigth{ float:left; width:265px; padding-left:2px;  height:35px; line-height:30px;}
+.code_rigth .txtcode{ width:80px;}
+.code_rigth a.on{ font-size:12px; color:#1e76b1; text-decoration:none;}
+.code_rigth a.on:hover{ text-decoration:underline;}
+.copyright{ text-align:center; font-size:12px; color:#666; font-family:Arial;  zoom:1; margin:0;margin-top:35px;}
+.copyright a{ text-align:center; font-size:12px; color:#317fbb; font-family:Arial; zoom:1; margin:0; text-decoration:none;}
+.copyright a:hover{ color:#317fbb; text-decoration:underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiteMeta>
+  <Meta PageName="FindBackPassword.aspx" Title="找回密码" KeyWords="找回密码" Description="找回密码" />
+  <Meta PageName="News_List.aspx" Title="商城资讯" KeyWords="商城资讯" Description="商城资讯" />
+  <Meta PageName="SpellBuyList.aspx" Title="团购列表" KeyWords="团购列表" Description="团购列表" />
+  <Meta PageName="ShoppingCart1.aspx" Title="购物车第一步" KeyWords="购物车第一步" Description="购物车第一步" />
+  <Meta PageName="ShoppingCart2.aspx" Title="购物车第二步" KeyWords="购物车第二步" Description="购物车第二步" />
+  <Meta PageName="ShoppingCart3.aspx" Title="购物车第三步" KeyWords="购物车第三步" Description="购物车第三步" />
+  <Meta PageName="ShopRegProtocol.aspx" Title="开店协议" KeyWords="开店协议" Description="开店协议" />
+  <Meta PageName="Video.aspx" Title="商城视频" KeyWords="商城视频" Description="商城视频" />
+  <Meta PageName="VideoSearchList.aspx" Title="视频搜索" KeyWords="视频搜索" Description="视频搜索" />
+  <Meta PageName="FindBackPassword.aspx" Title="找回密码" KeyWords="找回密码" Description="找回密码" />
+  <Meta PageName="BrandMoreSearch.aspx" Title="品牌" KeyWords="品牌" Description="品牌" />
+  <Meta PageName="ShopListSearch.aspx" Title="店铺" KeyWords="店铺" Description="店铺" />
+  <Meta PageName="SupplyDemandList.aspx" Title="供求" KeyWords="供求" Description="供求" />
+  <Meta PageName="CouponsList.aspx" Title="优惠券" KeyWords="优惠券" Description="优惠券" />
+  <Meta PageName="SpellBuyList.aspx" Title="团购" KeyWords="团购" Description="团购" />
+  <Meta PageName="PanicBuyList.aspx" Title="抢购" KeyWords="抢购" Description="抢购" />
+  <Meta PageName="City.aspx" Title="地图" KeyWords="地图" Description="地图" />
+  <Meta PageName="Integral.aspx" Title="积分" KeyWords="积分" Description="积分" />
+  <Meta PageName="Express.aspx" Title="快递" KeyWords="快递" Description="快递" />
+  <Meta PageName="PreDeposits.aspx" Title="预存款支付" KeyWords="预存款支付" Description="预存款支付" />
+  <Meta PageName="Login.aspx" Title="会员登录" KeyWords="会员登录" Description="会员登录" />
+  <Meta PageName="ConfirmOrder.aspx" Title="购物车第二步" KeyWords="购物车第二步" Description="购物车第二步" />
+  <Meta PageName="Default.aspx" Title="城市多用户V8.2.1最新版本" KeyWords="城市多用户V8.2.1最新版本" Description="城市多用户V8.2.1最新版本" />
+  <Meta PageName="MemberRegister.aspx" Title="注册会员" KeyWords="注册会员" Description="注册会员" />
+  <Meta PageName="MemberRegProtocol.aspx" Title="用户协议" KeyWords="用户协议" Description="用户协议" />
+  <Meta PageName="shopsmap.aspx" Title="地图" KeyWords="地图" Description="地图" />
+</SiteMeta>

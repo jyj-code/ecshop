@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1F357B10-2248-49CD-89C6-18E093168E38}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.ShopBusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ShopNum1.ShopInterface">
+      <HintPath>..\ShopNum1.ShopInterface.csproj\bin\Debug\ShopNum1.ShopInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="ShopNum1MultiEntity">
+      <HintPath>..\ShopNum1MultiEntity\bin\Debug\ShopNum1MultiEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="ShopNum1.DataAccess">
+      <HintPath>..\ShopNum1.DataAccess.csproj\bin\Debug\ShopNum1.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Common">
+      <HintPath>..\ShopNum1.Common.csproj\bin\Debug\ShopNum1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Address_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Advertisement_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_CategoryInfo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Category_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Collect_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Common_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_CouponType_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Coupon_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Ensure_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Friends_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_GroupProduct_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ImageCategory_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Image_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Integrals_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Integral_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_LimtPackages_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_LimtProduct_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_MessageBoard_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_MessageInfo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_NewsCategory_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_News_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_OnLineService_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_OrderInfo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_PackAge_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_PageInfo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Photo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ProductBooking_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ProductCategory_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ProductComment_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ProductConsult_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Product_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Rank_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Reputation_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ShopApplyRank_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ShopInfo_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_ShopLink_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_StarGuide_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_SupplyDemandCategory_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_SupplyDemand_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_URLManage_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_VideoCategory_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_VideoComment_Action.cs" />
+    <Compile Include="ShopNum1.ShopBusinessLogic\Shop_Video_Action.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

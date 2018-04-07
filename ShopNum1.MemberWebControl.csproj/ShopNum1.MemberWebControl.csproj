@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5BD72C21-FB0C-4656-A250-565431E8CFC2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.MemberWebControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ShopNum1.MultiBaseWebControl">
+      <HintPath>..\ShopNum1.MultiBaseWebControl.csproj\bin\Debug\ShopNum1.MultiBaseWebControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="ShopNum1MultiEntity">
+      <HintPath>..\ShopNum1MultiEntity\bin\Debug\ShopNum1MultiEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ShopBusinessLogic">
+      <HintPath>..\ShopNum1.ShopBusinessLogic.csproj\bin\Debug\ShopNum1.ShopBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MemberBusinessLogic">
+      <HintPath>..\ShopNum1.MemberBusinessLogic.csproj\obj\Debug\ShopNum1.MemberBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Factory">
+      <HintPath>..\ShopNum1.Factory.csproj\bin\Debug\ShopNum1.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MemberInterface">
+      <HintPath>..\ShopNum1.MemberInterface.csproj\bin\Debug\ShopNum1.MemberInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Common">
+      <HintPath>..\ShopNum1.Common.csproj\bin\Debug\ShopNum1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ScoreBusinessLogic">
+      <HintPath>..\ShopNum1.ScoreBusinessLogic.csproj\bin\Debug\ShopNum1.ScoreBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ScoreInterface">
+      <HintPath>..\ShopNum1.ScoreInterface.csproj\bin\Debug\ShopNum1.ScoreInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ShopFactory">
+      <HintPath>..\ShopNum1.ShopFactory.csproj\bin\Debug\ShopNum1.ShopFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ShopInterface">
+      <HintPath>..\ShopNum1.ShopInterface.csproj\bin\Debug\ShopNum1.ShopInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MessageBusinessLogic">
+      <HintPath>..\ShopNum1.MessageBusinessLogic.csproj\obj\Debug\ShopNum1.MessageBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.MessageInterface">
+      <HintPath>..\ShopNum1.MessageInterface.csproj\obj\Debug\ShopNum1.MessageInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="ShopNum1.BusinessLogic">
+      <HintPath>..\ShopNum1.BusinessLogic.csproj\bin\Debug\ShopNum1.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Interface">
+      <HintPath>..\ShopNum1.Interface.csproj\bin\Debug\ShopNum1.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.OrderBusinessLogic">
+      <HintPath>..\ShopNum1.OrderBusinessLogic.csproj\bin\Debug\ShopNum1.OrderBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.OrderInterface">
+      <HintPath>..\ShopNum1.OrderInterface.csproj\bin\Debug\ShopNum1.OrderInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ArticleBusinessLogic">
+      <HintPath>..\ShopNum1.ArticleBusinessLogic.csproj\bin\Debug\ShopNum1.ArticleBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.ArticleInterface">
+      <HintPath>..\ShopNum1.ArticleInterface.csproj\bin\Debug\ShopNum1.ArticleInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.PaymentBusinessLogic">
+      <HintPath>..\ShopNum1.PaymentBusinessLogic.csproj\bin\Debug\ShopNum1.PaymentBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="ShopNum1.CityBusinessLogic">
+      <HintPath>..\ShopNum1.CityBusinessLogic.csproj\bin\Debug\ShopNum1.CityBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.CityFactory">
+      <HintPath>..\ShopNum1.CityFactory.csproj\bin\Debug\ShopNum1.CityFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.CityInterface">
+      <HintPath>..\ShopNum1.CityInterface.csproj\bin\Debug\ShopNum1.CityInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Email">
+      <HintPath>..\ShopNum1.Email.csproj\bin\Debug\ShopNum1.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.KuaiDi">
+      <HintPath>..\ShopNum1.KuaiDi.csproj\bin\Debug\ShopNum1.KuaiDi.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.PaymentInterface">
+      <HintPath>..\ShopNum1.PaymentInterface.csproj\bin\Debug\ShopNum1.PaymentInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.SMSBusinessLogic">
+      <HintPath>..\ShopNum1.SMSBusinessLogic.csproj\bin\Debug\ShopNum1.SMSBusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Standard">
+      <HintPath>..\ShopNum1.Standard.csproj\bin\Debug\ShopNum1.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.SMSInterface">
+      <HintPath>..\ShopNum1.SMSInterface.csproj\bin\Debug\ShopNum1.SMSInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_AddProductComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_AddSupply.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ArticleComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ArticleCommentDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Bottom.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Comment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ComplaintsDetailed.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_CreditDetails.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ExitGoods.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_FeedBack.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Head.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Left.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_LifeOrderList.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MemberComplaints.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MemberProductCollect.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MemberReport.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Msg.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MsgDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MyCollect.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MyComplaints.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MyMessageBoard.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MyMessageBoardDetailed.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MyReport.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_MySupply.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_OrderDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_OrderList.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_OrderScoreDetailed.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_OrderScoreList.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_PayOp.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ProductComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RankScoreModifyLog.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RecommendCommision.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RecommendUser.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RecommendUserLink.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RefundGoods.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_RefundManage.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ReportDetailed.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SaleOrderList.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ScoreModifyLog.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SendMsg.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ShopCollect.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ShopNewsComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ShopNewsCommentDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ShopVideoComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_ShopVideoCommentDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SignIn.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SupplyDemandComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SupplyDemandCommentDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SysMsg.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_SysMsgDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_VideoComment.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_VideoCommentDetail.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_Welcome.cs" />
+    <Compile Include="ShopNum1.MemberWebControl\M_WelcomeProduct.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

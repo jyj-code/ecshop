@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<template>
+  <postagetemplaes>
+    <postagetemplae id="1" templateid="1" templatename="333223" fee="30" feetype="2" oneadd="6" regioncode="000" regionname="全国" groupid="0" createtime="2014-05-10 01:51:30" altertime="2014-05-10 01:51:30" orderid="2" groupregionnames="全国" groupregioncodes="000" />
+    <postagetemplae id="2" templateid="1" templatename="333223" fee="10" feetype="3" oneadd="3" regioncode="000" regionname="全国" groupid="0" createtime="2014-05-10 01:51:30" altertime="2014-05-10 01:51:30" orderid="3" groupregionnames="全国" groupregioncodes="000" />
+  </postagetemplaes>
+</template>

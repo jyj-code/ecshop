@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B4DC558D-9AD2-4C9F-9106-7BAC3B2B0415}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.ShopLocalization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\buttonText.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\changeFiled.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\common.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\inputValue.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\labelText.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\LocalizationUtil.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\messageShow.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\pageButtonText.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\pageGridView.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\pageLabelText.cs" />
+    <Compile Include="ShopNum1.ShopLocalization\pageVlidatorErrorMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\buttonText.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\changeFiled.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\common.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\inputValue.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\labelText.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\messageShow.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\pageButtonText.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\pageGridView.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\pageLabelText.resources" />
+    <EmbeddedResource Include="ShopNum1.ShopLocalization\pageVlidatorErrorMessage.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

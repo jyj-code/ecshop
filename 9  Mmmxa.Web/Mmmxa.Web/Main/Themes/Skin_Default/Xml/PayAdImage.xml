@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ads>
+  <ad id="1" title="首页 一楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="http://www.baidu.com" width="188" height="282" money="0" showDay="30" DefaultImage="/ImgUpload/Main/2013_09/img_201309180446553.jpg" IsRun="1" />
+  <ad id="2" title="首页 一楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="30" showDay="30" DefaultImage="/ImgUpload/Main/2013_09/img_201309180450114.jpg" IsRun="1" />
+  <ad id="3" title="首页 一楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180133186.jpg" IsRun="1" />
+  <ad id="4" title="首页 一楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180133182.jpg" IsRun="1" />
+  <ad id="5" title="首页 一楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180133171.jpg" IsRun="1" />
+  <ad id="6" title="首页 一楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="http://www.ifeng.com" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180133167.jpg" IsRun="1" />
+  <ad id="7" title="首页 二楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180135314.jpg" IsRun="1" />
+  <ad id="8" title="首页 二楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180135328.jpg" IsRun="1" />
+  <ad id="9" title="首页 二楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180135322.jpg" IsRun="1" />
+  <ad id="10" title="首页 二楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180135331.jpg" IsRun="1" />
+  <ad id="11" title="首页 二楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180135335.jpg" IsRun="1" />
+  <ad id="12" title="首页 二楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180136511.jpg" IsRun="1" />
+  <ad id="13" title="首页 三楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180202517.jpg" IsRun="1" />
+  <ad id="14" title="首页 三楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180202502.jpg" IsRun="1" />
+  <ad id="15" title="首页 三楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180202504.jpg" IsRun="1" />
+  <ad id="16" title="首页 三楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180205065.jpg" IsRun="1" />
+  <ad id="17" title="首页 三楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180202494.jpg" IsRun="1" />
+  <ad id="18" title="首页 三楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180202483.jpg" IsRun="1" />
+  <ad id="19" title="首页 四楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200044.jpg" IsRun="1" />
+  <ad id="20" title="首页 四楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200046.jpg" IsRun="1" />
+  <ad id="21" title="首页 四楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200037.jpg" IsRun="1" />
+  <ad id="22" title="首页 四楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200024.jpg" IsRun="1" />
+  <ad id="23" title="首页 四楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200013.jpg" IsRun="1" />
+  <ad id="24" title="首页 四楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180200024.jpg" IsRun="1" />
+  <ad id="25" title="首页 五楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146474.jpg" IsRun="1" />
+  <ad id="26" title="首页 五楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146462.jpg" IsRun="1" />
+  <ad id="27" title="首页 五楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146465.jpg" IsRun="1" />
+  <ad id="28" title="首页 五楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146451.jpg" IsRun="1" />
+  <ad id="29" title="首页 五楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146443.jpg" IsRun="1" />
+  <ad id="30" title="首页 五楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180146442.jpg" IsRun="1" />
+  <ad id="31" title="首页 六楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207067.jpg" IsRun="1" />
+  <ad id="32" title="首页 六楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207061.jpg" IsRun="1" />
+  <ad id="33" title="首页 六楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207058.jpg" IsRun="1" />
+  <ad id="34" title="首页 六楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207055.jpg" IsRun="1" />
+  <ad id="35" title="首页 六楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207043.jpg" IsRun="1" />
+  <ad id="36" title="首页 六楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180207041.jpg" IsRun="1" />
+  <ad id="37" title="首页 七楼广告1" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180157242.jpg" IsRun="1" />
+  <ad id="38" title="首页 七楼广告2" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180157246.jpg" IsRun="1" />
+  <ad id="39" title="首页 七楼广告3" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180157236.jpg" IsRun="1" />
+  <ad id="40" title="首页 七楼广告4" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180157238.gif" IsRun="1" />
+  <ad id="41" title="首页 七楼广告5" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180157228.jpg" IsRun="1" />
+  <ad id="42" title="首页 七楼广告6" type="1" Map="/ImgUpload/2013050614415450.jpg" Href="" width="188" height="282" money="0" showDay="9999" DefaultImage="/ImgUpload/Main/2014_01/201401180133182.jpg" IsRun="1" />
+</ads>

@@ -1,0 +1,44 @@
+﻿/*css document start*/
+
+/*ManagerBody*/
+
+	.ManagerForm .Help { padding:9px; padding-bottom:0px; text-align:right;}
+	.ManagerForm fieldset { border: 1px solid #ccc; margin-bottom: 8px; padding:4px 30px; padding-bottom:10px; text-align:center; }
+		.ManagerForm legend { font-weight:bold; line-height:45px; padding-left:60px;}
+		.ManagerForm table {text-align:left; color:#999; font-size:12px;}
+			.ManagerForm  th {text-align:right; padding-right:5px; line-height:240%;}
+			
+		.ManagerButton,.TopicButton{ border:1px solid #919699; background:url(../images/buttonbg.gif) repeat-x left bottom; text-align:center; width:198px; text-align:left; padding-left:30px; text-decoration:none; padding:2px 3px; cursor:pointer; line-height:22px; margin-right:2px; margin-bottom:15px;}
+			*html .ManagerButton { padding:1px 0; padding-left:30px;}
+			*+html .ManagerButton { padding:0; padding-left:30px;}
+			a.ManagerButton { display:block; float:left; padding:2px 3px; padding-left:30px; text-decoration:none; color:#000; margin-right:6px; line-height:22px;}
+				a.ManagerButton span,a.ManagerButton strong { display:block; float:left; background:url(../images/submit.gif) no-repeat 2px 50%; text-indent:1.5em;}
+				a.ManagerButton strong { background:url(../images/checkver.gif) no-repeat 5px 50%;text-indent:1.8em;}
+				a.ManagerButton:hover {text-decoration:none;color:#000;}
+			.ManagerButton img{padding-right:3px; margin-bottom:-3px;}
+
+		.TopicButton{padding:1px 2px; line-height:14px;}
+			*html .TopicButton { margin-right:2px;  font-size:12px;}
+			*+html .TopicButton { margin-right:2px;  font-size:12px;}
+			.TopicButton img{ margin-bottom:-3px; height:15px; padding-right:2px;}
+			a.TopicButton:link,a.TopicButton:visited {color:#000; text-decoration:none;}
+			a.TopicButton:hover,a.TopicButton:active {color:#000; text-decoration:none;}
+/*managerform*/
+
+
+/*inner*/
+
+.item_title{font-weight:700;padding:10px 0 8px 0;color:#555;}
+.rowform{ width:306px; overflow:auto; }
+.vtop {vertical-align:top;}
+/* form */
+.txt,textarea,select{ padding:2px; border:1px solid; border-color:#666 #ccc #ccc #666; background:#fff; color:#333; }
+.txt, select{ vertical-align:middle; }
+.txt_hover, .txt_focus, textarea_hover, textarea_focus{padding:2px; border:1px solid; border-color:#09C; background:#F5F9FD; }
+.txtnobd{ border:1px solid #FFF; background:#FFF; cursor:pointer; }
+.radio, .checkbox{ border:none; background:none; vertical-align:middle; }
+.checkbox{ height:14px; }
+.btn{ margin:3px 0; padding:2px 5px; *padding:4px 5px 1px; border-color:#ddd #666 #666 #ddd; background:#DDD; color:#000; cursor:pointer; vertical-align:middle; }
+.uploadbtn{ width:250px; border-color:#999; }
+.currentitem{font-weight:bold;}
+.preview {border:1px dashed #707070;margin-bottom:10px;padding:10px;width:580px!important;width:600px;}

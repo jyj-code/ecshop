@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3413A171-EAAF-4557-9A9F-D35822FCD4EA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.SecondResponseCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_BaiduOAuthException.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_BaiduOAuthMessage.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_BaiduUserResponse.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_QzoneCommonResponse.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_QzoneUserResponse.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_TaobaoOAuthException.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_TaobaoOAuthMessage.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_TaobaoUserResponse.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_XinlanOAuthException.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_XinLanOAuthMessage.cs" />
+    <Compile Include="ShopNum1.Second\ShopNum1_XinlanUserResponse.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

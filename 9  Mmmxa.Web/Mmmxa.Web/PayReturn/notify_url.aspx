@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="notify_url, ShopNum1.Deploy" %>

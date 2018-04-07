@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<Setting>
+  <RecordNum>鄂ICP备：10023455号 </RecordNum>
+  <Copyright>copy; 2002-2011 Groupfly  版权所有，并保留所有权利。</Copyright>
+  <Banner>~/ImgUpload/2012/09/19/Shop10001/orange.jpg</Banner>
+  <Link>http://www.shopnum1.com</Link>
+  <IfSetWaterMark>2</IfSetWaterMark>
+  <WaterMarkOriginalImge>/ImgUpload/shopImage/2013/shop10001//img_201309301041598.png_60x60.jpg</WaterMarkOriginalImge>
+  <WaterMarkImagePosition>5</WaterMarkImagePosition>
+  <ImageWaterMarkClarity>12</ImageWaterMarkClarity>
+  <WaterMarkWords>Jely测试文字水印</WaterMarkWords>
+  <WaterMarkWordsFont>GulimChe</WaterMarkWordsFont>
+  <WaterMarkWordsFontSize>20</WaterMarkWordsFontSize>
+  <WaterMarkWordsColor>#4C33E5</WaterMarkWordsColor>
+  <WordsWaterMarkPosition>5</WordsWaterMarkPosition>
+  <UserImageSpace>24615526</UserImageSpace>
+  <ShowCustomer>0</ShowCustomer>
+  <ShopLogo>/ImgUpload/shopImage/2013/shop10005//img_201311290211303.jpg</ShopLogo>
+  <ShopScroll>/ImgUpload/shopImage/2013/shop10005//img_201311290211193.jpg</ShopScroll>
+  <TwoCode>~/Shop/Shop/2012/09/19/shop10001/Themes/Skin_Default/images/qrcode.png</TwoCode>
+  <IsOpenServicePhone>1</IsOpenServicePhone>
+  <ServicePhone>15271804446</ServicePhone>
+</Setting>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{337B6A5F-C6AA-4354-96EA-DF575487907A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.MemberBusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ShopNum1.MemberInterface">
+      <HintPath>..\ShopNum1.MemberInterface.csproj\bin\Debug\ShopNum1.MemberInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1MultiEntity">
+      <HintPath>..\ShopNum1MultiEntity\bin\Debug\ShopNum1MultiEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="ShopNum1.DataAccess">
+      <HintPath>..\ShopNum1.DataAccess.csproj\bin\Debug\ShopNum1.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="ShopNum1.Common">
+      <HintPath>..\ShopNum1.Common.csproj\bin\Debug\ShopNum1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_Address_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_AdvancePaymentApplyLog_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_AdvancePaymentFreezeLog_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_AdvancePaymentModifyLog_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_Collect_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberActivate_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberCenter_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberEmailExec_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberProfitBonusLog_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberPwd_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberRank_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MemberReport_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_Member_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_MessageBoard_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_OrderComplaintsReplyList_Action.cs" />
+    <Compile Include="ShopNum1.BusinessLogic\ShopNum1_ShopProduct_Browse_Action.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

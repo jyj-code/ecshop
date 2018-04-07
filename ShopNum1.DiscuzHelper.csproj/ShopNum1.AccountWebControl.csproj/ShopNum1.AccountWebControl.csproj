@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AE2AF04E-7103-4E80-ADD8-4A3BF352F8BD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ShopNum1.AccountWebControl</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ShopNum1.MultiBaseWebControl" />
+    <Reference Include="System.Web" />
+    <Reference Include="ShopNum1MultiEntity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ShopNum1.MemberBusinessLogic" />
+    <Reference Include="System.Data" />
+    <Reference Include="ShopNum1.Factory" />
+    <Reference Include="ShopNum1.MemberInterface" />
+    <Reference Include="ShopNum1.Common" />
+    <Reference Include="ShopNum1.PaymentBusinessLogic" />
+    <Reference Include="ShopNum1.PaymentInterface" />
+    <Reference Include="ShopNum1.BusinessLogic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_AddressOpeater.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_AdPayDecrease.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_AdPayDetailList.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_AdPayRecharge.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_AdPayTransfer.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_BindEmail.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_BindMobile.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_Bottom.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_ChangePwdWay.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_CheckEmail.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_CheckMobile.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_Head.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_Left.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_LoadUserPhoto.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_MemInfo.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_PwdSer.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_ShipAddress.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_UpPayPwd.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_UpPayPwdSucceed.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_UpPwd.cs" />
+    <Compile Include="ShopNum1.AccountWebControl\A_Welcome.cs" />
+    <Compile Include="ZoomImageDemo\CutPhotoHelp.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,618 @@
+http://www.abcd.com/Main/news_list.aspx?tag=2&&ErrorSouce= mscorlib &&Message=对路径“G:\baiduyundownload\CityMall_V8.2.1_2014年6月30日Release()\Shopnum1City\Web\log\logArticle.txt”的访问被拒绝。&&StackTrace=    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   在 System.IO.File.AppendAllText(String path, String contents, Encoding encoding)
+   在 System.IO.File.AppendAllText(String path, String contents)
+   在 ShopNum1.BusinessLogic.ShopNum1_Article_Action.GetArticleIsHotorIsRecommend(String showCount, String categoryID, String type, String SubstationID) 位置 G:\baiduyundownload\CityMall_V8.2.1_2014年6月30日Release()\Shopnum1City\ShopNum1.ArticleBusinessLogic.csproj\ShopNum1.BusinessLogic\ShopNum1_Article_Action.cs:行号 731
+   在 ShopNum1.WebControl.AriticleIsHotorIsRecommend.method_0() 位置 G:\baiduyundownload\CityMall_V8.2.1_2014年6月30日Release()\Shopnum1City\ShopNum1.ArticleWebControl.csproj\ShopNum1.WebControl\AriticleIsHotorIsRecommend.cs:行号 78
+   在 ShopNum1.WebControl.AriticleIsHotorIsRecommend.InitializeSkin(Control skin) 位置 G:\baiduyundownload\CityMall_V8.2.1_2014年6月30日Release()\Shopnum1City\ShopNum1.ArticleWebControl.csproj\ShopNum1.WebControl\AriticleIsHotorIsRecommend.cs:行号 73
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 G:\baiduyundownload\CityMall_V8.2.1_2014年6月30日Release()\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=www.abcd.com 2016/4/14 23:20:23
+http://localhost:9932/Main/Default.aspx&&ErrorSouce= ShopNum1.WebControl &&Message=未将对象引用设置到对象的实例。&&StackTrace=    在 ShopNum1.WebControl.KeyWords.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.WebControl.csproj\ShopNum1.WebControl\KeyWords.cs:行号 41
+   在 ShopNum1.WebControl.KeyWords.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.WebControl.csproj\ShopNum1.WebControl\KeyWords.cs:行号 34
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/11/22 11:04:24
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:24:11
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:24:59
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:30:08
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:31:05
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:33:17
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:33:35
+http://localhost:9932/City/wuhan/City.aspx&&ErrorSouce= ShopNum1.WebControl &&Message=未将对象引用设置到对象的实例。&&StackTrace=    在 ShopNum1.WebControl.KeyWords.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.WebControl.csproj\ShopNum1.WebControl\KeyWords.cs:行号 41
+   在 ShopNum1.WebControl.KeyWords.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.WebControl.csproj\ShopNum1.WebControl\KeyWords.cs:行号 34
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:36:50
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:38:26
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:46:28
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 2:49:52
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:04:18
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:08:52
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:13:05
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:16:39
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:18:14
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:28:40
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:33:22
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:34:08
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:53:07
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/BaiDuMap.aspx?MemLoginID=西宁马牌轮胎总店&&ErrorSouce= .Net SqlClient Data Provider &&Message=用户 'sa' 登录失败。&&StackTrace=    在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String[] tableNames)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.LoadDataSet(DbCommand command, DataSet dataSet, String tableName)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteDataSet(DbCommand command)
+   在 ShopNum1.DataAccess.DatabaseExcetue.RunProcedureReturnDataTable(String strProcedureName, String[] paraName, String[] paraValue) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.DataAccess.csproj\ShopNum1.DataAccess\DatabaseExcetue.cs:行号 324
+   在 ShopNum1.ShopBusinessLogic.Shop_UserDefinedColumn_Action.GetUserDefinedColumnList(String memloginid, String isshow) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopBusinessLogic.csproj\ShopNum1.ShopBusinessLogic\Shop_UserDefinedColumn_Action.cs:行号 39
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.method_0() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 61
+   在 ShopNum1.ShopWebControl.UserDefinedColumnNew.InitializeSkin(Control skin) 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.ShopWebControl.csproj\ShopNum1.ShopWebControl\UserDefinedColumnNew.cs:行号 55
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 3:54:13
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/BaiDuMap.aspx&&ErrorSouce= System.Web &&Message=文件“/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/Themes/Skin_Default/Skins/AgentHead.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 147
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 4:00:13
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/BaiDuMap.aspx&&ErrorSouce= System.Web &&Message=文件“/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/Themes/Skin_Default/Skins/AgentHead.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 147
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 e:\用户文件\桌面\Shopnum1City\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 4:06:42
+http://localhost:9932/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/BaiDuMap.aspx&&ErrorSouce= System.Web &&Message=文件“/Shop/Shop/2012/09/19/Shop10001/Themes/Skin_Default/Themes/Skin_Default/Skins/AgentHead.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 f:\工作\项目\自己\私活\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 147
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 f:\工作\项目\自己\私活\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 2016/12/25 14:46:04
+http://localhost:9932/Main/Themes/Skin_Default/Default.aspx&&ErrorSouce= System.Web &&Message=文件“/Main/Themes/Skin_Default/Themes/Skin_Default/Skins/Meto.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 147
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 08:59:07
+http://localhost:9932/Main/Themes/Skin_Default/Default.aspx&&ErrorSouce= System.Web &&Message=文件“/Main/Themes/Skin_Default/Meto.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 151
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:01:20
+http://localhost:9932/Main/Themes/Skin_Default/Default.aspx&&ErrorSouce= System.Web &&Message=文件“/Main/Themes/Skin_Default/Meto.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 151
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:01:54
+http://localhost:9932/Main/Login.aspx&&ErrorSouce= System.Web &&Message=文件“/Main/Skins/Meto.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 151
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:27:26
+http://localhost:9932/Main/Default.aspx&&ErrorSouce= System.Web &&Message=文件“/Main/Skins/Meto.ascx”不存在。&&StackTrace=    在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.LoadSkin() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 151
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 42
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:29:59
+http://localhost:9932/Main/Default.aspx&&ErrorSouce= ShopNum1.MetaWebControl &&Message=未将对象引用设置到对象的实例。&&StackTrace=    在 ShopNum1.WebControl.Meto.InitializeSkin(Control skin) 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MetaWebControl.csproj\ShopNum1.WebControl\Meto.cs:行号 46
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 43
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:31:49
+http://localhost:9932/Main/Default.aspx&&ErrorSouce= System.Web &&Message=值不能为空。
+参数名: child&&StackTrace=    在 System.Web.UI.ControlCollection.Add(Control child)
+   在 ShopNum1.MultiBaseWebControl.BaseWebControl.CreateChildControls() 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MultiBaseWebControl.csproj\ShopNum1.MultiBaseWebControl\BaseWebControl.cs:行号 44
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:34:04
+http://localhost:9932/Main/Default.aspx&&ErrorSouce= ShopNum1.MetaWebControl &&Message=未将对象引用设置到对象的实例。&&StackTrace=    在 ShopNum1.WebControl.Meto.Render(HtmlTextWriter writer) 位置 E:\工作室\Shopnum修改版\Shopnum\ShopNum1.MetaWebControl.csproj\ShopNum1.WebControl\Meto.cs:行号 64
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 ASP.main_default_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\工作室\Shopnum修改版\Shopnum\Web\Main\Themes\Skin_Default\Default.aspx:行号 5
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&&MainDomain=localhost 17-4-27 下午 09:37:35

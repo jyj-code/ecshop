@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Skin>
+  <SkinItem name="绿色模板" description="绿色模板" />
+  <Template check="green.check" />
+</Skin>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{123CC546-07AE-4B32-9B9A-8C7BF3D0D525}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ShopNum1MultiEntity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Mmmxa.MultiEntity\Advertisement.cs" />
+    <Compile Include="Mmmxa.MultiEntity\Agent__VideoComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\BoutiqueEnroll.cs" />
+    <Compile Include="Mmmxa.MultiEntity\CommonPageModel.cs" />
+    <Compile Include="Mmmxa.MultiEntity\DataClassesDataContext.cs" />
+    <Compile Include="Mmmxa.MultiEntity\DefaultAdImg.cs" />
+    <Compile Include="Mmmxa.MultiEntity\PageAdID.cs" />
+    <Compile Include="Mmmxa.MultiEntity\PageInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\Properties\Settings.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Address.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AdvancePaymentApplyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AdvancePaymentFreezeLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AdvancePaymentModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AdvertisementImage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AdvertPay.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AgentPaymentApplyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Announcement.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AnnouncementCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Article.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ArticleCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ArticleComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AttachMent.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_AttachMentCateGory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_BadWords.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Brand.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Category.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryAdID.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryAdPayMent.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryAdvertisement.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CategoryType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_City.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_City_AdvancePaymentModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Comment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ComplaintsManagement.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ComplaintsReply.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Control.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ControlData.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CreditScoreModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_CreditSumModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Dept.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_DispatchRegion.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Email.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_EmailBook.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_EmailBookType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_EmailGroupSend.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_EmailType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_FloorDistribution.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Group.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_GroupPage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_GroupPageWebControl.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_GroupUser.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Group_Product.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Help.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_HelpType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Image.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ImageCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Image_Type.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_IPInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_IPManage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_KeyWords.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Limt_Package.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Limt_Product.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Link.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Logistic.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Member.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberActivate.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberAssignGroup.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberEmailExec.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberFriend.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberGroup.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberMessage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberProductCollect.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberProfitBonusLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberPwd.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberRank.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberReport.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MemberShopCollect.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MenberServiceInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Menu.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MessageBoard.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MessageInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MMS.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MMSGroupSend.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MMSMemberAssignGroup.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MMSMemberGroup.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MMSType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MobilePayment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_MultiDataSet.cs" />
+    <Compile Include="Mmmxa.MultiEntity\Mmmxa.MultiDataSetTableAdapters\ShopNum1_ShopInfoTableAdapter.cs" />
+    <Compile Include="Mmmxa.MultiEntity\Mmmxa.MultiDataSetTableAdapters\TableAdapterManager.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Navigation.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OnlineService.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OperateLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderComplaint.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderExpressInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderOperateLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderProduct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_OrderScore.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Organ.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PackAge.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PackAgeRalate.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Page.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PageWebControl.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Payment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PaymentType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PreTransfer.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_PreventIp.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ProductCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ProductCategoryAndProductBranDrelation.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Product_Activity.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_RankScoreModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Refund.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Region.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_RelatedArticle.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ScoreFreezeLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ScoreModifyLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ScoreOrderInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ScoreOrderProduct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ScoreProductCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ServiceLog.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ServiceProduct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shipper.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopCollect.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopEnsure.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopPayment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProductConsult.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProductProp.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProductPropValue.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProductRelationProp.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProduct_Browse.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopProRelateProp.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopRank.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopReputation.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ShopURLManage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ApplyCateGory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ApplyEnsure.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ApplyShopRank.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Cart.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Coupon.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_CouponType.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Image.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ImageCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Integral.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Link.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_MessageBoard.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_News.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_NewsCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_NewsComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_OnlineService.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_OtherOrderInfo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Photo.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Product.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ProductBooking.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ProductCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ProductComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ProductSpell.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ScoreProduct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_ScoreProductCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_StarGuide.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Template.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_UserDefinedColumn.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_Video.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_VideoCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Shop_VideoComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SignIn.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Spec.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SpecificationManagement.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SpecificationProductImage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SpecProudct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SpecProudctDetail.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SpecValue.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SubstationManage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SupplyDemand.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SupplyDemandCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SupplyDemandComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SurveyOption.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_SurveyTheme.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ThemeActivity.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ThemeActivityProduct.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ThreePaymentRecord.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_TypeBrand.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_TypeProp.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_TypeSpec.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_User.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_UserDefinedColumn.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_UserMessage.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Video.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_VideoCategory.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_VideoComment.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_WebSite.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ReplyRule.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ReplyRuleChirldContent.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ReplyRuleContent.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ReplyRuleContentArticle.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ReplyRuleKey.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ShopConfig.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ShopMember.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ShopMenu.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_WeiXin_ShopUser.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_Weixin_ShopWeiXinConfig.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ZtcApply.cs" />
+    <Compile Include="Mmmxa.MultiEntity\ShopNum1_ZtcGoods.cs" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+  </ItemGroup>
+</Project>
